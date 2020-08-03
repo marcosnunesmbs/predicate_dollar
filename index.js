@@ -9,13 +9,12 @@ let X = [];
 let Y = [];
 let qtdLinhas = 0;
 
-for(let i=1; i<linhas.length; i++) {
-	console.log(i)
+for(let l=1; l<linhas.length; l++) {
 	let celulas1 = [];
 	if(qtdLinhas==(linhas.length-2)) celulas1 = ['31.12.2018', 3.8813, 3.8813, 3.8813, 3.8813];
-	else celulas1 = linhas[i+1].split(';');
+	else celulas1 = linhas[l+1].split(';');
 
-	const celulas2 = linhas[i].split(';');
+	const celulas2 = linhas[l].split(';');
 
 	const FechamentoX = Number(celulas1[1]);
 	const AberturaX   = Number(celulas1[2]);
